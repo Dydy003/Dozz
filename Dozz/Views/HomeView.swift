@@ -96,7 +96,12 @@ struct HomeView: View {
                         .padding()
                     
                     
-                        List {
+                    Divider()
+                        .frame(height: 2.0)
+                        .overlay(Color.colorText)
+                        .padding()
+                    
+                        ScrollView {
                             ForEach(items) { item in
                                 HStack {
                                     Image(systemName: "sun.min.fill")
@@ -108,25 +113,29 @@ struct HomeView: View {
                                     
                                     Spacer()
                                     
-                                    Text(item.task ?? "")
-                                        .font(.headline)
-                                        .fontWeight(.bold)
-                                        .padding()
+                                    VStack(alignment: .leading, spacing: 2) {
+                                        Text(item.task ?? "")
+                                            .font(.headline)
+                                            .fontWeight(.bold)
+                                        
+                                        Text("\(item.timestamp!, formatter: itemFormatter)")
+                                            .font(.footnote)
+                                            .fontWeight(.light)
                                     }
+                                    .padding()
                                 }
+                            }
                             .onDelete(perform: deleteItems)
                         }
-                        
-                        .listStyle(InsetGroupedListStyle())
-                    }
-                    .navigationBarTitleDisplayMode(.inline)
+                }
+                .navigationBarTitleDisplayMode(.inline)
                 
-                    .toolbar {
-                        ToolbarItem(placement: .principal) {
-                            HStack {
-                                Image(systemName: "sun.min.fill")
-                                    .foregroundStyle(Color.colorText)
-                                    .bold()
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        HStack {
+                            Image(systemName: "sun.min.fill")
+                                .foregroundStyle(Color.colorText)
+                                .bold()
                                 Text("Daily Tasks")
                                     .foregroundStyle(Color.colorText)
                                     .bold()
