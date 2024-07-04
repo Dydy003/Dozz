@@ -17,6 +17,7 @@
 		F81DFBC72C2CAAE500D56AA4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DFBC62C2CAAE500D56AA4 /* Persistence.swift */; };
 		F81DFBC92C2CB62500D56AA4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DFBC82C2CB62500D56AA4 /* Constant.swift */; };
 		F8C944272C2DD0F70024D7EA /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C944262C2DD0F70024D7EA /* HideKeyboardExtension.swift */; };
+		F8CB95302C37640600D6F3E8 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CB952F2C37640600D6F3E8 /* NewTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F81DFBC62C2CAAE500D56AA4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F81DFBC82C2CB62500D56AA4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F8C944262C2DD0F70024D7EA /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		F8CB952F2C37640600D6F3E8 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				F81DFB962C2C776F00D56AA4 /* App */,
 				F81DFB922C2C772300D56AA4 /* Views */,
+				F8CB952E2C3763CB00D6F3E8 /* Composant */,
 				F81DFB982C2C77AA00D56AA4 /* Model */,
 				F81DFB942C2C774D00D56AA4 /* Utility */,
 				F81DFB802C2C697600D56AA4 /* Assets.xcassets */,
@@ -139,6 +142,14 @@
 				F81DFB872C2C697600D56AA4 /* Dozz.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F8CB952E2C3763CB00D6F3E8 /* Composant */ = {
+			isa = PBXGroup;
+			children = (
+				F8CB952F2C37640600D6F3E8 /* NewTaskView.swift */,
+			);
+			path = Composant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				F81DFB7F2C2C697300D56AA4 /* HomeView.swift in Sources */,
 				F8C944272C2DD0F70024D7EA /* HideKeyboardExtension.swift in Sources */,
 				F81DFB7D2C2C697300D56AA4 /* DozzApp.swift in Sources */,
+				F8CB95302C37640600D6F3E8 /* NewTaskView.swift in Sources */,
 				F81DFB912C2C6ADB00D56AA4 /* extensionColor.swift in Sources */,
 				F81DFBC72C2CAAE500D56AA4 /* Persistence.swift in Sources */,
 				F81DFBC92C2CB62500D56AA4 /* Constant.swift in Sources */,

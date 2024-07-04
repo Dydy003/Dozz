@@ -13,9 +13,6 @@ struct HomeView: View {
     
     @State private var task: String = ""
     
-    private var isButtonDisabled: Bool {
-        task.isEmpty
-    }
     
     // FETCHING DATA
     @Environment(\.managedObjectContext) private var viewContext
@@ -26,22 +23,6 @@ struct HomeView: View {
     private var items: FetchedResults<Task>
     
     // MARK - FUNCTION
-    private func addItem() {
-        withAnimation {
-            let newItem = Task(context: viewContext)
-            newItem.timestamp = Date()
-            newItem.task = task
-            newItem.completion = false
-            newItem.id = UUID()
-            
-            do {
-                try viewContext.save()
-            } catch {
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
     
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
@@ -53,9 +34,6 @@ struct HomeView: View {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
-            
-            task = ""
-            hideKeuboard()
         }
     }
     
@@ -66,36 +44,6 @@ struct HomeView: View {
                 Color.gradient.ignoresSafeArea()
                 
                 VStack {
-                        VStack(spacing: 16) {
-                            TextField("New Task", text: $task)
-                                .padding()
-                                .background(
-                                    Color.white.opacity(0.5)
-                                )
-                                .clipShape(.capsule)
-                            
-                            Button {
-                                addItem()
-                            } label: {
-                                
-                                Spacer()
-                                
-                                Text("Save")
-                                
-                                Spacer()
-                                
-                            }
-                            .disabled(isButtonDisabled)
-                            .padding()
-                            .font(.headline)
-                            .foregroundStyle(Color.colorText)
-                            .background(isButtonDisabled ? Color.color1.opacity(0.5) : Color.color1)
-                            .clipShape(.capsule)
-
-                        }
-                        .padding()
-                    
-                    
                     Divider()
                         .frame(height: 2.0)
                         .overlay(Color.colorText)
