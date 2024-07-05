@@ -9,8 +9,9 @@ import SwiftUI
 import CoreData
 
 struct HomeView: View {
-   // MARK: - PROPERTY
+    // MARK: - PROPERTY
     
+    @State private var showNewTaskItem: Bool = false
     @State private var task: String = ""
     
     
@@ -40,41 +41,46 @@ struct HomeView: View {
     // MARK: - BODY
     var body: some View {
         NavigationStack {
-            ZStack {
-                Color.gradient.ignoresSafeArea()
+            ZStack(alignment: .bottomTrailing) {
+                Color.gradient.opacity(0.4).ignoresSafeArea()
                 
                 VStack {
+                    
+                    Spacer(minLength: 20)
+                    
                     Divider()
                         .frame(height: 2.0)
                         .overlay(Color.colorText)
                         .padding()
                     
-                        ScrollView {
-                            ForEach(items) { item in
-                                HStack {
-                                    Image(systemName: "sun.min.fill")
-                                        .font(.title)
-                                        .scaledToFit()
-                                        .foregroundStyle(Color.colorText)
-                                        .bold()
-                                        .padding()
-                                    
-                                    Spacer()
-                                    
-                                    VStack(alignment: .leading, spacing: 2) {
-                                        Text(item.task ?? "")
-                                            .font(.headline)
-                                            .fontWeight(.bold)
-                                        
-                                        Text("\(item.timestamp!, formatter: itemFormatter)")
-                                            .font(.footnote)
-                                            .fontWeight(.light)
-                                    }
+                    ScrollView {
+                        ForEach(items) { item in
+                            HStack {
+                                Image(systemName: "sun.min.fill")
+                                    .font(.title)
+                                    .scaledToFit()
+                                    .foregroundStyle(Color.colorText)
+                                    .bold()
                                     .padding()
+                                
+                                Spacer()
+                                
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(item.task ?? "")
+                                        .foregroundStyle(Color.colorText)
+                                        .font(.headline)
+                                        .fontWeight(.bold)
+                                    
+                                    Text("\(item.timestamp!, formatter: itemFormatter)")
+                                        .foregroundStyle(Color.colorText)
+                                        .font(.footnote)
+                                        .fontWeight(.light)
                                 }
+                                .padding()
                             }
-                            .onDelete(perform: deleteItems)
                         }
+                        .onDelete(perform: deleteItems)
+                    }
                 }
                 .navigationBarTitleDisplayMode(.inline)
                 
@@ -84,20 +90,36 @@ struct HomeView: View {
                             Image(systemName: "sun.min.fill")
                                 .foregroundStyle(Color.colorText)
                                 .bold()
-                                Text("Daily Tasks")
-                                    .foregroundStyle(Color.colorText)
-                                    .bold()
-                                Image(systemName: "sun.min.fill")
-                                    .foregroundStyle(Color.colorText)
-                                    .bold()
+                            Text("Daily Tasks")
+                                .foregroundStyle(Color.colorText)
+                                .bold()
+                            Image(systemName: "sun.min.fill")
+                                .foregroundStyle(Color.colorText)
+                                .bold()
                         }
                     }
                 }
+                
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            showNewTaskItem = true
+                        } label: {
+                            Image(systemName: "plus")
+                                .foregroundStyle(Color.colorText)
+                                .bold()
+                        }
+                    }
+                }
+                
+                if showNewTaskItem {
+                    NewTaskView()
+                }
             }
-
+            
             .toolbar {
                 #if os(iOS)
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .topBarLeading) {
                     EditButton()
                         .foregroundStyle(Color.colorText).bold()
                 }

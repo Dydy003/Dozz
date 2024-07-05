@@ -15,7 +15,7 @@ struct NewTaskView: View {
     @State private var fruits: String = ""
     
     private var isButtonDisabled: Bool {
-        task.isEmpty || fruits.isEmpty
+        task.isEmpty /*|| fruits.isEmpty*/
     }
     
     private func addItem() {
@@ -51,7 +51,7 @@ struct NewTaskView: View {
                     .font(.system(size: 24, design: .serif))
                     .padding()
                     .background(
-                        Color.white.opacity(0.5)
+                        Color.color3.opacity(0.5)
                     )
                     .clipShape(.capsule)
                 
@@ -73,7 +73,7 @@ struct NewTaskView: View {
                 .padding()
                 .font(.headline)
                 .foregroundStyle(Color.colorText)
-                .background(isButtonDisabled ? Color.color1.opacity(0.5) : Color.color1)
+                .background(isButtonDisabled ? Color.color3.opacity(0.5) : Color.color1)
                 .clipShape(.capsule)
 
             }
