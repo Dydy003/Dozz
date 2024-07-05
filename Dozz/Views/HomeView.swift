@@ -11,7 +11,8 @@ import CoreData
 struct HomeView: View {
     // MARK: - PROPERTY
     
-    @State private var showNewTaskItem: Bool = false
+    @State private var showNewTaskItem = false
+    @State private var animationTask = false
     @State private var task: String = ""
     
     
@@ -86,24 +87,21 @@ struct HomeView: View {
                 
                 .toolbar {
                     ToolbarItem(placement: .principal) {
-                        HStack {
-                            Image(systemName: "sun.min.fill")
-                                .foregroundStyle(Color.colorText)
-                                .bold()
-                            Text("Daily Tasks")
-                                .foregroundStyle(Color.colorText)
-                                .bold()
-                            Image(systemName: "sun.min.fill")
-                                .foregroundStyle(Color.colorText)
-                                .bold()
-                        }
+                        Text("Dozz.")
+                            .font(.title)
+                            .foregroundStyle(Color.colorText)
+                            .bold()
                     }
                 }
                 
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
-                            showNewTaskItem = true
+                            
+                            withAnimation {
+                                showNewTaskItem.toggle()
+                            }
+                            
                         } label: {
                             Image(systemName: "plus")
                                 .foregroundStyle(Color.colorText)
@@ -113,7 +111,13 @@ struct HomeView: View {
                 }
                 
                 if showNewTaskItem {
-                    NewTaskView()
+                    withAnimation {
+                        NewTaskView()
+                            .onAppear {
+                                animationTask.toggle()
+                            }
+                            .transition(.scale)
+                    }
                 }
             }
             

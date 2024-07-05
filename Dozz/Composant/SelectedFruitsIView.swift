@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct SelectedFruitsIView: View {
+struct SelectedFruitsView: View {
+    
+    @Binding var selectedFruits: Bool
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    SelectedFruitsIView()
+    @State var isSelect = false
+    return SelectedFruitsView(selectedFruits: $isSelect)
 }

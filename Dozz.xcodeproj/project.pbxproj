@@ -18,6 +18,7 @@
 		F81DFBC92C2CB62500D56AA4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DFBC82C2CB62500D56AA4 /* Constant.swift */; };
 		F8C944272C2DD0F70024D7EA /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C944262C2DD0F70024D7EA /* HideKeyboardExtension.swift */; };
 		F8CB95302C37640600D6F3E8 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CB952F2C37640600D6F3E8 /* NewTaskView.swift */; };
+		F8F7C39F2C38BBB40090532F /* SelectedFruitsIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C39E2C38BBB40090532F /* SelectedFruitsIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		F81DFBC82C2CB62500D56AA4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F8C944262C2DD0F70024D7EA /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		F8CB952F2C37640600D6F3E8 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		F8F7C39E2C38BBB40090532F /* SelectedFruitsIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFruitsIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				F8CB952F2C37640600D6F3E8 /* NewTaskView.swift */,
+				F8F7C39E2C38BBB40090532F /* SelectedFruitsIView.swift */,
 			);
 			path = Composant;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				F81DFB892C2C697600D56AA4 /* Dozz.xcdatamodeld in Sources */,
 				F81DFB7F2C2C697300D56AA4 /* HomeView.swift in Sources */,
 				F8C944272C2DD0F70024D7EA /* HideKeyboardExtension.swift in Sources */,
+				F8F7C39F2C38BBB40090532F /* SelectedFruitsIView.swift in Sources */,
 				F81DFB7D2C2C697300D56AA4 /* DozzApp.swift in Sources */,
 				F8CB95302C37640600D6F3E8 /* NewTaskView.swift in Sources */,
 				F81DFB912C2C6ADB00D56AA4 /* extensionColor.swift in Sources */,

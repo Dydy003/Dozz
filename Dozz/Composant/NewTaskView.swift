@@ -48,7 +48,7 @@ struct NewTaskView: View {
                 TextField("New Task", text: $task)
                     .foregroundStyle(Color.colorText)
                     .bold()
-                    .font(.system(size: 24, design: .serif))
+                    .font(.system(size: 20, design: .serif))
                     .padding()
                     .background(
                         Color.color3.opacity(0.5)
@@ -63,7 +63,7 @@ struct NewTaskView: View {
                     
                     Text("Save")
                         .foregroundStyle(Color.colorText)
-                        .font(.system(size: 24, design: .serif))
+                        .font(.system(size: 20, design: .serif))
                         .bold()
                     
                     Spacer()
