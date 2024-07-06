@@ -16,6 +16,7 @@
 		F81DFB9A2C2C7A5F00D56AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81DFB992C2C7A5F00D56AA4 /* LaunchScreen.storyboard */; };
 		F81DFBC72C2CAAE500D56AA4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DFBC62C2CAAE500D56AA4 /* Persistence.swift */; };
 		F81DFBC92C2CB62500D56AA4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DFBC82C2CB62500D56AA4 /* Constant.swift */; };
+		F88F375B2C39632800B12F8C /* FontColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F375A2C39632800B12F8C /* FontColorView.swift */; };
 		F8C944272C2DD0F70024D7EA /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C944262C2DD0F70024D7EA /* HideKeyboardExtension.swift */; };
 		F8CB95302C37640600D6F3E8 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CB952F2C37640600D6F3E8 /* NewTaskView.swift */; };
 		F8F7C39F2C38BBB40090532F /* SelectedFruitsIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C39E2C38BBB40090532F /* SelectedFruitsIView.swift */; };
@@ -32,6 +33,7 @@
 		F81DFB992C2C7A5F00D56AA4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F81DFBC62C2CAAE500D56AA4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F81DFBC82C2CB62500D56AA4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F88F375A2C39632800B12F8C /* FontColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontColorView.swift; sourceTree = "<group>"; };
 		F8C944262C2DD0F70024D7EA /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		F8CB952F2C37640600D6F3E8 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 		F8F7C39E2C38BBB40090532F /* SelectedFruitsIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFruitsIView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		F81DFB932C2C773D00D56AA4 /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				F88F375A2C39632800B12F8C /* FontColorView.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				F81DFB7D2C2C697300D56AA4 /* DozzApp.swift in Sources */,
 				F8CB95302C37640600D6F3E8 /* NewTaskView.swift in Sources */,
 				F81DFB912C2C6ADB00D56AA4 /* extensionColor.swift in Sources */,
+				F88F375B2C39632800B12F8C /* FontColorView.swift in Sources */,
 				F81DFBC72C2CAAE500D56AA4 /* Persistence.swift in Sources */,
 				F81DFBC92C2CB62500D56AA4 /* Constant.swift in Sources */,
 			);

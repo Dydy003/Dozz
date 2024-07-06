@@ -14,8 +14,10 @@ struct NewTaskView: View {
     @State private var task: String = ""
     @State private var fruits: String = ""
     
+    @Binding var isShowing: Bool
+    
     private var isButtonDisabled: Bool {
-        task.isEmpty /*|| fruits.isEmpty*/
+        task.isEmpty || fruits.isEmpty
     }
     
     private func addItem() {
@@ -35,7 +37,9 @@ struct NewTaskView: View {
             }
             
             task = ""
+            fruits = ""
             hideKeuboard()
+            isShowing = false
         }
     }
     
@@ -44,16 +48,16 @@ struct NewTaskView: View {
             
             Spacer()
             
-            VStack(spacing: 16) {
+            VStack(spacing: 6) {
                 TextField("New Task", text: $task)
                     .foregroundStyle(Color.colorText)
                     .bold()
                     .font(.system(size: 20, design: .serif))
                     .padding()
-                    .background(
-                        Color.color3.opacity(0.5)
-                    )
-                    .clipShape(.capsule)
+                    .background(Color.color3.opacity(0.5))
+                    .clipShape(RoundedRectangle(cornerRadius: 20.0, style: .continuous))
+                
+                SelectedFruitsView(selectedFruits: $fruits)
                 
                 Button {
                     addItem()
@@ -79,6 +83,7 @@ struct NewTaskView: View {
             }
             .padding(.horizontal)
             .padding(.vertical, 20)
+            .padding(10)
             .background(Color.gradient.opacity(0.5))
             .clipShape(.buttonBorder)
             .shadow(color: .colorText.opacity(0.3), radius: 5)
@@ -88,6 +93,6 @@ struct NewTaskView: View {
 }
 
 #Preview {
-    NewTaskView()
+    NewTaskView(isShowing: .constant(true))
         .background(Color.gradient.opacity(0.3).ignoresSafeArea())
 }
