@@ -76,6 +76,7 @@ struct HomeView: View {
                                         .foregroundStyle(Color.colorText)
                                         .font(.footnote)
                                         .fontWeight(.light)
+                                    
                                 }
                                 .padding()
                             }
@@ -97,13 +98,12 @@ struct HomeView: View {
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
-                            
                             withAnimation {
                                 showNewTaskItem.toggle()
                             }
                             
                         } label: {
-                            Image(systemName: "plus")
+                            Image(systemName: showNewTaskItem ? "minus" : "plus")
                                 .foregroundStyle(Color.colorText)
                                 .bold()
                         }
@@ -111,8 +111,10 @@ struct HomeView: View {
                 }
                 
                 if showNewTaskItem {
+                    FontColorView()
+                    
                     withAnimation {
-                        NewTaskView()
+                        NewTaskView(isShowing: $showNewTaskItem)
                             .onAppear {
                                 animationTask.toggle()
                             }
