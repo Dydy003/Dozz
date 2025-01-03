@@ -6,7 +6,3 @@
 
 • SwiftUI <br/> 
 • CoreData <br/> 
-• WidgetKit
-
-Une petite application avec CoreData, une application pour prendre note des courses.
-1.2
