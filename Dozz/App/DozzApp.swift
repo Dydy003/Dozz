@@ -10,12 +10,23 @@ import SwiftUI
 @main
 struct DozzApp: App {
     
+    @AppStorage("Onboarding") private var Onboarding = false
+    
     let persistenceController = PersistenceController.shared
+    
+//    init() {
+//        Purchases.logLevel = .debug
+//        Purchases.configure(withAPIKey: "")
+//    }
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            if Onboarding {
+                MainView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            } else {
+                OnboardingView()
+            }
         }
     }
 }

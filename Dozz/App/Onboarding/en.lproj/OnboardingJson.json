@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Dozz",
+        "description": "Welcome to Dozz, created by Dylan CAETANO, thanks again for downloading one of my iOS apps.",
+        "imageName": "app.fill"
+    },
+    {
+        "id": 2,
+        "title": "List of races",
+        "description": "This application will allow you to make your shopping lists, and on top of that a beautiful interface for you, my favorite users.",
+        "imageName": "pencil.and.list.clipboard"
+    },
+    {
+        "id": 3,
+        "title": "Check Boxes",
+        "description": "The aim is to tick the boxes when you find a food item in the store. Once ticked, you can either delete it, or it will move to the bottom of the list.",
+        "imageName": "checklist.checked"
+    }
+]

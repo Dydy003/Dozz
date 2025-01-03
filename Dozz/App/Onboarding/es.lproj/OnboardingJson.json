@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Dozz",
+        "description": "Bienvenido a Dozz, creado por Dylan CAETANO, gracias de nuevo por descargar una de mis aplicaciones iOS.",
+        "imageName": "app.fill"
+    },
+    {
+        "id": 2,
+        "title": "Lista de carreras ",
+        "description": "Esta aplicación te ayudará a hacer tus listas de la compra, y además es una interfaz maravillosa para vosotros, mis usuarios favoritos.",
+        "imageName": "pencil.and.list.clipboard"
+    },
+    {
+        "id": 3,
+        "title": "Marque las casillas",
+        "description": "El objetivo es marcar las casillas cuando encuentres un alimento en la tienda. Una vez marcada, puedes eliminarla o pasará al final de la lista.",
+        "imageName": "checklist.checked"
+    }
+]

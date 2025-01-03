@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Dozz",
+        "description": "歡迎來到 Dozz，由 Dylan CAETANO 創作，再次感謝您下載我的 iOS 應用程式之一。",
+        "imageName": "app.fill"
+    },
+    {
+        "id": 2,
+        "title": "賽事清單",
+        "description": "此應用程式可協助您製作購物清單，除此之外，它還為您，我最喜愛的使用者，提供了絕佳的介面。",
+        "imageName": "pencil.and.list.clipboard"
+    },
+    {
+        "id": 3,
+        "title": "勾選方格",
+        "description": "目的是當您在商店中找到某種食品時，在方塊中打勾。一旦打勾，您就可以刪除它，否則它就會移到清單底部。",
+        "imageName": "checklist.checked"
+    }
+]

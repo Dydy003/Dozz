@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Dozz
+
+  Created by Dylan Caetano on 25/09/2024.
+  
+*/
+
+
+// HOME VIEW
+"Search..." = "Rechercher...";
+
+
+// NEW TASK :
+"New List" = "Nouvelle liste";
+
+"Icon :" = "Icône :";
+
+"Save" = "Sauvegarder";
+
+"Done" = "Terminé";
+
+
+// Alert
+"Cancel" = "Annuler";
+
+"Delete" = "Supprimer";
+
+"Delete the list" = "Supprimer la liste";
+
+"Are you sure you want to delete this list ?" = "Êtes-vous sûr de vouloir supprimer cette liste ?";
+
+
+// TabBar
+"List" = "Liste";
+
+"Setting" = "Général";
+
+
+// SETTING
+"Askip" = "Askip";
+
+"Tip $0.99" = "Pourboire 0.99€";
+"Welcome To Give A Tip To " = "Bienvenue Sur Offrirez Un Pourboire À ";
+

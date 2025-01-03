@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Dozz",
+        "description": "Bienvenue dans Dozz, créé par Dylan CAETANO, merci encore d'avoir téléchargé une de mes applications iOS.",
+        "imageName": "app.fill"
+    },
+    {
+        "id": 2,
+        "title": "Liste de Courses",
+        "description": "Cette application vous permettra de faire vos listes de courses, et en plus de ça une magnifique interface pour vous, mes utilisateurs préférés",
+        "imageName": "pencil.and.list.clipboard"
+    },
+    {
+        "id": 3,
+        "title": "Cochez Les Cases",
+        "description": "Le but est de cocher les cases quand vous aurez trouvé un aliment au magasin. Une fois coché, vous pouvez soit le supprimer, soit il se mettra tout en bas de la liste.",
+        "imageName": "checklist.checked"
+    }
+]

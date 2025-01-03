@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Dozz
+
+  Created by Dylan Caetano on 25/09/2024.
+  
+*/
+
+// New Task
+"New List" = "Neue Liste";
+
+"Icon :" = "Icon :";
+
+"Save" = "Speichern";
+
+// Alert
+"Cancel" = "Abbrechen";
+
+"Delete" = "Löschen";
+
+"Delete the list" = "Löschen der Liste";
+
+"Are you sure you want to delete this list ?" = "Sind Sie sicher, dass Sie diese Liste löschen wollen ?";
+
+
+// Setting
+    "Tip $0.99" = "Tipp €0.99";
+"Welcome To Give A Tip To " = "Willkommen zu geben einen Tipp zu ";
+"Welcome to Tipping A " = "Willkommen bei Tipping A ";
+
+"News" = "Nachrichten";

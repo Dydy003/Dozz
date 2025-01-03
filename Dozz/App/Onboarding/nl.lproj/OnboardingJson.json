@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Dozz",
+        "description": "Willkommen bei Dozz, erstellt von Dylan CAETANO. Nochmals vielen Dank, dass Sie eine meiner iOS-Apps heruntergeladen haben.",
+        "imageName": "app.fill"
+    },
+    {
+        "id": 2,
+        "title": "Liste der Rennen",
+        "description": "Diese App ermöglicht es Ihnen, Ihre Einkaufslisten zu erstellen, und darüber hinaus eine wunderbare Schnittstelle für Sie, meine Lieblingsbenutzer",
+        "imageName": "pencil.and.list.clipboard"
+    },
+    {
+        "id": 3,
+        "title": "Kreuzen Sie Die Kästchen an",
+        "description": "Das Ziel ist es, die Kästchen zu markieren, wenn du ein Lebensmittel im Laden gefunden hast. Sobald du ein Häkchen gesetzt hast, kannst du es entweder löschen oder es wird ganz unten in der Liste landen.",
+        "imageName": "checklist.checked"
+    }
+]

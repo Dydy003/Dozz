@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Dozz",
+        "description": "Dylan CAETANOが作成したDozzへようこそ、私のiOSアプリをダウンロードしてくれてありがとう。",
+        "imageName": "app.fill"
+    },
+    {
+        "id": 2,
+        "title": "レース一覧",
+        "description": "このアプリケーションは、あなたの買い物リストを作成するのに役立ち、その上、私のお気に入りのユーザーであるあなたのための素晴らしいインターフェースです。",
+        "imageName": "pencil.and.list.clipboard"
+    },
+    {
+        "id": 3,
+        "title": "ボックスにチェックを入れる",
+        "description": "ショップで食品を見つけたら、チェックボックスにチェックを入れるのが目的だ。チェックを入れたら、削除するか、リストの一番下に移動します。",
+        "imageName": "checklist.checked"
+    }
+]

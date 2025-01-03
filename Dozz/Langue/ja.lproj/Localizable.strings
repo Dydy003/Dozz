@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Dozz
+
+  Created by Dylan Caetano on 25/09/2024.
+  
+*/
+
+// New Task
+"New List" = "新しいリスト";
+
+"Icon :" = "アイコン：";
+
+"Save" = "セーブ";
+
+// Alert
+"Cancel" = "キャンセル";
+
+"Delete" = "削除";
+
+"Delete the list" = "リストを削除する";
+
+"Are you sure you want to delete this list ?" = "本当にこのリストを削除したいのですか ？";

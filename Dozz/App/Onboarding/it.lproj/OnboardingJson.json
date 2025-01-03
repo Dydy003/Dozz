@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Dozz",
+        "description": "Benvenuti su Dozz, creato da Dylan CAETANO, grazie ancora per aver scaricato una delle mie app per iOS.",
+        "imageName": "app.fill"
+    },
+    {
+        "id": 2,
+        "title": "Elenco delle gare",
+        "description": "Questa applicazione vi aiuterà a stilare le vostre liste della spesa e, inoltre, è un'interfaccia meravigliosa per voi, i miei utenti preferiti.",
+        "imageName": "pencil.and.list.clipboard"
+    },
+    {
+        "id": 3,
+        "title": "Spuntare le caselle",
+        "description": "L'obiettivo è quello di spuntare le caselle quando si trova un alimento nel negozio. Una volta spuntate, è possibile eliminarle o spostarle in fondo all'elenco.",
+        "imageName": "checklist.checked"
+    }
+]

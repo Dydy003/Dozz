@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Dozz
+
+  Created by Dylan Caetano on 25/09/2024.
+  
+*/
+
+"New List" = "新列表";
+
+"Icon :" = "图标 ：";
+
+"Save" = "节省";
+
+// Alert
+"Cancel" = "取消";
+
+"Delete" = "删除";
+
+"Delete the list" = "删除列表";
+
+"Are you sure you want to delete this list ?" = "您确定要删除此列表吗？";

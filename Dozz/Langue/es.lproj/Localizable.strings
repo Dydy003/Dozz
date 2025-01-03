@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  Dozz
+
+  Created by Dylan Caetano on 25/09/2024.
+  
+*/
+
+
+// NEW TASK :
+"New List" = "Nueva lista";
+
+"Icon :" = "Icono :";
+
+"Save" = "Guardar";
+
+// Alert
+"Cancel" = "Anular";
+
+"Delete" = "Borrar";
+
+"Delete the list" = "Borrar la lista";
+
+"Are you sure you want to delete this list ?" = "¿Estás seguro de que quieres borrar esta lista?";
+
+
