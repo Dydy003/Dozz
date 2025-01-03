@@ -1,5 +1,6 @@
 # DozzApp
-<img width="804" alt="Capture d’écran 2024-07-07 à 00 09 44" src="https://github.com/Dydy003/Dozz/assets/173150572/680793de-44cb-4d40-95e0-eb1cd8a2ee14">
+<img width="917" alt="Capture d’écran 2025-01-03 à 02 53 20" src="https://github.com/user-attachments/assets/0f9074f3-7fc1-4ce4-9386-6a2f34fcbdc4" />
+
 
 
 
